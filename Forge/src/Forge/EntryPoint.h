@@ -4,7 +4,9 @@
 	extern Forge::Application* Forge::CreateApplication();
 	
 	int main(int argc, char** argv) {
-		printf("Welcome to IronForge!");
+		Forge::Log::Init();
+		FE_CORE_INFO("Initlialized the logging system!");
+		
 		auto app = Forge::CreateApplication();
 		app->Run();
 		delete app;

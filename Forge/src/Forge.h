@@ -3,7 +3,7 @@
 // For Forge games and applications only
 
 #include "Forge/Application.h"
-#include <stdio.h>
+#include "Forge/Log.h"
 
 // ENTRY POINT VVV
 #include "Forge/EntryPoint.h";
