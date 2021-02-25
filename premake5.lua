@@ -18,6 +18,9 @@ project "Forge"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "fepch.h"
+	pchsource "Forge/src/fepch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

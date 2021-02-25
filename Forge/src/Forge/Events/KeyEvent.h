@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Forge {
 
 	class FORGE_API KeyEvent : public Event

@@ -1,3 +1,4 @@
+#include "fepch.h"
 #include "Log.h"
 
 namespace Forge {

@@ -1,9 +1,7 @@
 #pragma once
 
+#include "../../fepch.h"
 #include "../Forge/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Forge {
 
