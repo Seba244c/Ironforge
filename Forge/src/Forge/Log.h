@@ -3,12 +3,14 @@
 #include <memory>
 #include "spdlog\spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Forge {
 	class FORGE_API Log
 	{
 	public:
 		static void Init();
+		static void Test();
 		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger;  }
 		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 	private:
@@ -27,4 +29,4 @@ namespace Forge {
 #define FE_INFO(...)	      ::Forge::Log::GetClientLogger()->info(__VA_ARGS__)
 #define FE_WARN(...)	      ::Forge::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define FE_ERROR(...)	      ::Forge::Log::GetClientLogger()->error(__VA_ARGS__)
-#define FE_FATAL(...)	      ::Forge::Log::GetClientLogger()->fatal(__VA_ARGS__) 
+#define FE_FATAL(...)	      ::Forge::Log::GetClientLogger()->critical(__VA_ARGS__) 

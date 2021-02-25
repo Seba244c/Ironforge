@@ -12,4 +12,11 @@ namespace Forge {
 		s_ClientLogger = spdlog::stdout_color_mt("APP");
 		s_ClientLogger->set_level(spdlog::level::info);
 	}
+
+	void Log::Test() {
+		FE_INFO("Info");
+		FE_WARN("Warn");
+		FE_ERROR("Error");
+		FE_FATAL("Fatal");
+	}
 }

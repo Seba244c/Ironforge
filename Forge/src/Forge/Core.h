@@ -9,3 +9,5 @@
 #else
 	#error Forge only supports Windows!
 #endif  // FE_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

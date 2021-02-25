@@ -147,6 +147,10 @@
     <ClInclude Include="src\Forge\Application.h" />
     <ClInclude Include="src\Forge\Core.h" />
     <ClInclude Include="src\Forge\EntryPoint.h" />
+    <ClInclude Include="src\Forge\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Forge\Events\Event.h" />
+    <ClInclude Include="src\Forge\Events\KeyEvent.h" />
+    <ClInclude Include="src\Forge\Events\MouseEvent.h" />
     <ClInclude Include="src\Forge\Log.h" />
   </ItemGroup>
   <ItemGroup>
