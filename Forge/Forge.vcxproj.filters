@@ -35,6 +35,8 @@
       <Filter>Forge</Filter>
     </ClInclude>
     <ClInclude Include="src\fepch.h" />
+    <ClInclude Include="src\Forge\Window.h" />
+    <ClInclude Include="src\Forge\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Forge\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Forge</Filter>
     </ClCompile>
     <ClCompile Include="src\fepch.cpp" />
+    <ClCompile Include="src\Forge\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

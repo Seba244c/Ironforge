@@ -10,6 +10,12 @@ workspace "Ironforge"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Forge/vendor/GLFW/include"
+
+include "Forge/vendor/GLFW"
+
 project "Forge"
 	location "Forge"
 	kind "SharedLib"
@@ -29,7 +35,16 @@ project "Forge"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
