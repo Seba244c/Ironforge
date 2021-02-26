@@ -4,6 +4,7 @@
 
 #include "Forge/Application.h"
 #include "Forge/Log.h"
+#include "Forge/Layer.h"
 
 // ENTRY POINT VVV
 #include "Forge/EntryPoint.h";
