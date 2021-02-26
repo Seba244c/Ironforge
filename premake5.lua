@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Forge/vendor/GLFW/include"
+IncludeDir["GLAD"] = "Forge/vendor/GLAD/include"
 
 include "Forge/vendor/GLFW"
+include "Forge/vendor/GLAD"
 
 project "Forge"
 	location "Forge"
@@ -37,13 +39,15 @@ project "Forge"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.GLAD}"
 	}
 
 	links
 
 	{
 		"GLFW",
+		"GLAD",
 		"opengl32.lib"
 	}
 
@@ -55,7 +59,8 @@ project "Forge"
 		defines
 		{
 			"FE_PLATFORM_WINDOWS",
-			"FE_BUILD_DLL"
+			"FE_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

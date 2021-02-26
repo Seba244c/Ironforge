@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../fepch.h"
-#include "../Forge/Core.h"
+#include "fepch.h"
+#include "Forge/Core.h"
 
 namespace Forge {
 
