@@ -163,8 +163,8 @@
     <ClInclude Include="src\Forge\Layer.h" />
     <ClInclude Include="src\Forge\LayerStack.h" />
     <ClInclude Include="src\Forge\Log.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Forge\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\fepch.h" />
   </ItemGroup>
   <ItemGroup>

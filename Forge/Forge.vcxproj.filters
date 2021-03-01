@@ -7,11 +7,11 @@
     <Filter Include="Forge\Events">
       <UniqueIdentifier>{FCA4953A-E807-25DF-918D-5D957DCFF061}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Forge\Platform">
-      <UniqueIdentifier>{6CDBB052-58A9-A458-413D-157F2DAA80BD}</UniqueIdentifier>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Forge\Platform\Windows">
-      <UniqueIdentifier>{A631E921-922B-1274-7B98-A884673178E0}</UniqueIdentifier>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -49,10 +49,10 @@
     <ClInclude Include="src\Forge\Window.h">
       <Filter>Forge</Filter>
     </ClInclude>
-    <ClInclude Include="src\fepch.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
-      <Filter>Forge\Platform\Windows</Filter>
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\fepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Forge\Application.cpp">
@@ -67,9 +67,9 @@
     <ClCompile Include="src\Forge\Log.cpp">
       <Filter>Forge</Filter>
     </ClCompile>
-    <ClCompile Include="src\fepch.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
-      <Filter>Forge\Platform\Windows</Filter>
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\fepch.cpp" />
   </ItemGroup>
 </Project>
